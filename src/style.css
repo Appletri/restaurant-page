@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Cursive';
+    src: url(./jonesy-1/Jonesy\ Script.otf);
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(./jonesy-1/Jonesy\ Capitals.otf);
+}
+
+html{
+    font-family: 'MyFont';
+}
+
+#content, #main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    align-items: center;
+}
+
+.nav-item {
+    color: blue;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Cursive';
+    font-size: 5rem;
+}
