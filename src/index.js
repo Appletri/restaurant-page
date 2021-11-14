@@ -22,7 +22,7 @@ function init() {
     navRight.appendChild(addButton('Join now'));
     document.body.appendChild(content());
     const main = document.querySelector('#content');
-    startUpAbout();
+    startUpMenu();
     footer();
 
 
