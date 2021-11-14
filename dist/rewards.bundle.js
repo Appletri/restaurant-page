@@ -16,7 +16,7 @@
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ startUpRewards)\n/* harmony export */ });\nconsole.log('rewards page');\n\nfunction startUpRewards(){\n    // document.body.appendChild(content());\n    const main = document.querySelector('#content');\n    main.textContent = 'This is the Rewards page, check it out'\n    function content() {\n        const element = document.createElement('div');\n        element.id = 'content';\n        return element;\n    };\n}\n\n//# sourceURL=webpack://restraurant-page/./src/pages/rewards.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ startUpRewards)\n/* harmony export */ });\nconsole.log('rewards page');\n\nfunction startUpRewards(){\n    // document.body.appendChild(content());\n    const main = document.querySelector('#content');\n    main.textContent = 'This is the Rewards page, check it out'\n   \n   \n   \n    function addDiv() {\n        const element = document.createElement('div');\n        element.id = 'content';\n        return element;\n    };\n}\n\n//# sourceURL=webpack://restraurant-page/./src/pages/rewards.js?");
 
 /***/ })
 
