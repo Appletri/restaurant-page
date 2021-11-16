@@ -18,16 +18,22 @@ function addContainer(num, cssName, parent) {
 
 };
 
-function addIconLabel(num, cssName, parent, arrText){
-    for (let i=0; i<num; i++){        
+function addIconLabel(parent, arrText, arrPic){
+    for (let i=0; i<arrText.length; i++){        
         const element = document.createElement('div');
-        // const drink = new Image();
-        // drink.src = arrPic[i];
-        // element.appendChild(drink);
+        function addDivForImg (){
+            const imgMask = document.createElement('div');
+            const drink = new Image();
+            drink.src = arrPic[i];
+            imgMask.className = 'imgMask'
+            imgMask.appendChild(drink);
+            element.appendChild(imgMask);
+        }
+        addDivForImg();
         const text = document.createElement('p');
         text.textContent = arrText[i];
         element.appendChild(text);
-        element.className = cssName + i;
+        element.className = `menuIcon`;
         parent.appendChild(element);
     }
-}
+};

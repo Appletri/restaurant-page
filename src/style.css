@@ -153,13 +153,58 @@ button:nth-child(2){
 }
 
 .menu2 {
-    background-color: #006241;
     flex: 1 1 0;
     margin-right: 8.5rem;
+}
+.menu2 div{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
+.menuIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    gap: 1rem;
+}
+
+.menuIcon p {
+    font-size: 1.2rem;
+}
+
+.menu2 h1{
+    margin-bottom: 0px;
+}
+
+.menu2 p{
+    width: 150px;
+}
+.imgMask {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+.menu2 img {
+    width:300px;
+    object-position: -75px -70px;
+    
 }
 
 .type1, .type9, .type15, .type18 {
     font-size: 1.2rem;
     color: black;
     font-weight: 500;
+}
+.sectionHead h2 {
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+}
+.sectionHead hr {
+    color: rgba(235, 235, 235, 0.5);
+    margin-top: 0px;
+    width: 100%;
 }
