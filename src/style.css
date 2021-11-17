@@ -171,6 +171,7 @@ button:nth-child(2){
     gap: 1rem;
 }
 
+
 .menuIcon p {
     font-size: 1.2rem;
 }
@@ -191,7 +192,7 @@ button:nth-child(2){
 .menu2 img {
     width:300px;
     object-position: -75px -70px;
-    
+    transition: ease 0.3s;
 }
 
 .type1, .type9, .type15, .type18 {
@@ -208,3 +209,62 @@ button:nth-child(2){
     margin-top: 0px;
     width: 100%;
 }
+
+
+.menu2 img:hover {
+    width:350px;
+    object-position: -100px -100px;
+}
+
+.menu1 p{
+    transition: ease 0.2s;
+}
+
+.menu1 p:hover {
+    transform: scale(1.1);
+    color: #006241;
+}
+ 
+/*   Rewards page */
+.mainRewards1 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.rewards1 {
+    display:flex;
+    flex-flow: row-reverse, nowrap;
+    height: 50vw;
+    overflow: hidden;
+    background-color: #d4e9e2;
+    width: 100vw;
+}
+
+
+.rewards1 img {
+    width: 160vw;
+    object-position: -28vw 0px;
+}
+
+.box1 {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    left: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 38vw;
+    margin-top: 10vw;
+    
+}
+
+.R1text1{
+    font-size: 4vw;
+    width: 23vw;
+    font-family: 'MyFont';
+    margin-bottom: 1vw;
+}
+
