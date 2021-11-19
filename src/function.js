@@ -1,4 +1,4 @@
-export {addText, addContainer, addIconLabel};
+export {addText, addContainer, addIconLabel, addStep};
 
 function addText(num, cssName, parent ) {
     for (let i=1; i<=num; i++){
@@ -36,4 +36,31 @@ function addIconLabel(parent, arrText, arrPic){
         element.className = `menuIcon`;
         parent.appendChild(element);
     }
+};
+
+function addStep(num, picture, titleArr, textArr, parent){
+    for (let i=0; i<num; i++){
+        const element = document.createElement('div');
+        if (picture === true){
+            const pic = new Image();
+            pic.src = arrPic;
+            pic.className = 'stepIcon'
+            element.appendChild(pic);
+        }
+        else {
+            const num = document.createElement('p');
+            num.textContent = i+1;
+            num.className = 'numberStepIcon'
+            element.appendChild(num);
+        }
+        const text = document.createElement('p');
+        const subText = document.createElement('p');
+        text.textContent = titleArr[i];
+        subText.textContent = textArr[i];
+        text.className = 'stepTitle';
+        element.appendChild(text);
+        element.appendChild(subText);
+        parent.appendChild(element);        
+    }
+  
 };

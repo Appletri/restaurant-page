@@ -230,7 +230,7 @@ button:nth-child(2){
     display:flex;
     flex-direction: column;
     align-items: center;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 .rewards1 {
@@ -253,7 +253,6 @@ button:nth-child(2){
     flex-flow: column;
     position: absolute;
     left: 3rem;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.7vw;
     font-weight: 500;
     width: 38vw;
@@ -267,4 +266,55 @@ button:nth-child(2){
     font-family: 'MyFont';
     margin-bottom: 1vw;
 }
+
+
+.rewards2, .R2box2 div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.R2box2{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 80vw;
+    margin-top: 3rem;
+
+}
+
+.R2box2 div{
+    height: 350px;
+    line-height: 28px;
+}
+.numberStepIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: -30rem;
+    font-weight: 600;
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: #05864d solid 2px;
+    color: #006241;
+    flex-shrink: 0;
+}
+
+.stepTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.R2text1{
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 24px;
+}
+
 

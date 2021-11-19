@@ -2,7 +2,7 @@ import './style.css';
 import startUpAbout from './pages/about.js';
 import startUpMenu from './pages/menu.js';
 import startUpRewards from './pages/rewards.js';
-import startUpGift from './pages/gift-cards';
+// import startUpGift from './pages/gift-cards';
 import Icon from './images/starbucks-logo-png-transparent.png';
 
 init();
@@ -17,7 +17,7 @@ function init() {
     navLeft.appendChild(navLogo());
     navLeft.appendChild(navItem('Menu'));
     navLeft.appendChild(navItem('Rewards'));
-    navLeft.appendChild(navItem('Gift Cards'));
+    // navLeft.appendChild(navItem('Gift Cards'));
     navRight.appendChild(addButton('Sign in'));
     navRight.appendChild(addButton('Join now'));
     document.body.appendChild(content());
@@ -83,9 +83,9 @@ function init() {
         else if (e.target.textContent == 'Rewards'){
             startUpRewards();
         }
-        else if (e.target.textContent == 'Gift Cards'){
-            startUpGift();
-        };
+        // else if (e.target.textContent == 'Gift Cards'){
+        //     startUpGift();
+        // };
     };
 
 
