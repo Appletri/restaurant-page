@@ -38,13 +38,13 @@ function addIconLabel(parent, arrText, arrPic){
     }
 };
 
-function addStep(num, picture, titleArr, textArr, parent){
+function addStep(num, picture, titleArr, textArr, parent, arrPic, picCSSName){
     for (let i=0; i<num; i++){
         const element = document.createElement('div');
         if (picture === true){
             const pic = new Image();
-            pic.src = arrPic;
-            pic.className = 'stepIcon'
+            pic.src = arrPic[i];
+            pic.className = picCSSName;
             element.appendChild(pic);
         }
         else {
@@ -53,13 +53,16 @@ function addStep(num, picture, titleArr, textArr, parent){
             num.className = 'numberStepIcon'
             element.appendChild(num);
         }
+        const textbox = document.createElement('div');
+        textbox.className = 'textbox';
         const text = document.createElement('p');
         const subText = document.createElement('p');
         text.textContent = titleArr[i];
         subText.textContent = textArr[i];
         text.className = 'stepTitle';
-        element.appendChild(text);
-        element.appendChild(subText);
+        textbox.appendChild(text);
+        textbox.appendChild(subText);
+        element.appendChild(textbox);
         parent.appendChild(element);        
     }
   

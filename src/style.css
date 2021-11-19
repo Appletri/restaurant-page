@@ -268,7 +268,7 @@ button:nth-child(2){
 }
 
 
-.rewards2, .R2box2 div{
+.rewards2, .R2box2 div, .R4box2 div, .rewards4, .rewards3{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -277,16 +277,17 @@ button:nth-child(2){
     text-align: center;
 }
 
-.R2box2{
+.R2box2, .R4box2{
     display: flex;
     align-items: center;
     gap: 2rem;
     width: 80vw;
     margin-top: 3rem;
+    margin-bottom: 5rem;
 
 }
 
-.R2box2 div{
+.R2box2 div, .R4box2 div{
     height: 350px;
     line-height: 28px;
 }
@@ -294,7 +295,6 @@ button:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: -30rem;
     font-weight: 600;
     font-size: 24px;
     width: 48px;
@@ -310,11 +310,73 @@ button:nth-child(2){
     font-weight: 600;
 }
 
-.R2text1{
+.R2text1, .R4text1{
     margin-top: 10rem;
     margin-bottom: 3rem;
     font-weight: 600;
     font-size: 24px;
 }
 
+.R4text2{
+    width: 70vw;
+    line-height:28px;
+}
 
+.stepIcon{
+    width:112px;
+}
+.R3text1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.R3box1{
+    background-color: #f1f8f6;
+    width: 100vw;
+}
+
+.R3box11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.R3box2{
+    background-color: #d4e9e2;
+    width: 100vw;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.R3box2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.R3box2 .textbox{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 20rem;
+    text-align: left;
+}
+
+.R3box2 img{
+    width: 400px;
+    padding-right: 4rem;
+}
+
+.R3box2 p{
+    line-height: 28px;
+}
+
+.R3box2 .stepTitle{
+    font-weight: 600;
+    font-size: 24px;
+}
