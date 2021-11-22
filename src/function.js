@@ -34,6 +34,7 @@ function addIconLabel(parent, arrText, arrPic){
         text.textContent = arrText[i];
         element.appendChild(text);
         element.className = `menuIcon`;
+        element.id = arrText[i];
         parent.appendChild(element);
     }
 };
@@ -62,6 +63,7 @@ function addStep(num, picture, titleArr, textArr, parent, arrPic, picCSSName){
         text.className = 'stepTitle';
         textbox.appendChild(text);
         textbox.appendChild(subText);
+        element.className = `hidden${i}`
         element.appendChild(textbox);
         parent.appendChild(element);        
     }

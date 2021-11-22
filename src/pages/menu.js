@@ -16,12 +16,13 @@ export default function startUpMenu(){
 
     addText(22,'type', document.querySelector('.menu1'));
     for (let i=0; i<all.length; i++){
-        document.querySelector(`.type${i+1}`).textContent = all[i];
+        const text = document.querySelector(`.type${i+1}`);
+        text.textContent = all[i];
+        text.addEventListener('click', goTo); 
+    
     };
 
     addContainer(4,'icon-category', document.querySelector('.menu2'));
-    // document.querySelector('icon-category1').textContent = 'Menu';
-    // document.querySelector('icon-category2').textContent = 'Drinks';
     
     addIconLabel(document.querySelector('.icon-category1'), drinks, drinksImg);
     addIconLabel(document.querySelector('.icon-category2'), food, foodImg);
@@ -33,6 +34,7 @@ export default function startUpMenu(){
         for(let i=1;i<=4;i++){
             const element = document.createElement('div');
             element.className = 'sectionHead';
+            element.id = header[i-1];
             const text = document.createElement('h2');
             text.textContent = header[i-1];
             const hr = document.createElement('hr');
@@ -45,4 +47,7 @@ export default function startUpMenu(){
         document.querySelector('.menu2').insertBefore(head, document.querySelector('.sectionHead'));
     };
 
+    function goTo(e){
+        document.location.href = `#${e.target.textContent}`;
+    }
 }

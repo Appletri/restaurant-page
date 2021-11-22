@@ -6,9 +6,9 @@ export default function startUpRewards(){
     const stepTitle2 = ['Fun freebies', 'Order & pay ahead', 'Get to free faster'];
     const stepInstr2 = ['Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.','Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.','Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.'];
     const stepImg = ['https://www.starbucks.com/weblx/images/rewards/benefits/1-fun-freebies.jpg', 'https://www.starbucks.com/weblx/images/rewards/benefits/2-order-and-pay-ahead.jpg','https://www.starbucks.com/weblx/images/rewards/benefits/3-get-to-free-faster.jpg']
-    const rankTitle = ['Customize your drink'];
-    const rankInstr = ['Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.'];
-    const rankImg = ['https://www.starbucks.com/weblx/images/rewards/reward-tiers/025.png']
+    const rankTitle = ['Customize your drink','Brewed hot coffee, bakery item or hot tea','Handcrafted drink, hot breakfast or parfait','Salad, sandwich or protein box','Select merchandise or at-home coffee'];
+    const rankInstr = ['Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.','Pair coffee cake or an almond croissant with your fresh cup of hot brew.','Have a really good morning with a breakfast sandwich, oatmeal or your favorite drink.','Nourish your day with a hearty Chipotle Chicken Wrap or Eggs & Cheese Protein Box.','Take home a signature cup, a bag of coffee or your choice of select coffee accessories.'];
+    const rankImg = ['https://www.starbucks.com/weblx/images/rewards/reward-tiers/025.png','https://www.starbucks.com/weblx/images/rewards/reward-tiers/050.png','https://www.starbucks.com/weblx/images/rewards/reward-tiers/150.png','https://www.starbucks.com/weblx/images/rewards/reward-tiers/200.png','https://www.starbucks.com/weblx/images/rewards/reward-tiers/400.png']
 
 
     addContainer(1,'mainRewards',document.querySelector('#content'))
@@ -35,17 +35,24 @@ export default function startUpRewards(){
     document.querySelector('.R3text1').textContent = 'Get your favorites for free';
     addContainer(1,'R3box1',document.querySelector('.R3box1'));
     addText(5,'R3text2',document.querySelector('.R3box11'));
+
     document.querySelector('.R3text21').innerHTML = '25<span style="color:gold; font-size:16px">★</span>';
     document.querySelector('.R3text22').innerHTML  = '50<span style="color:gold; font-size:16px">★</span>';
     document.querySelector('.R3text23').innerHTML  = '150<span style="color:gold; font-size:16px">★</span>';
     document.querySelector('.R3text24').innerHTML  = '200<span style="color:gold; font-size:16px">★</span>';
     document.querySelector('.R3text25').innerHTML  = '400<span style="color:gold; font-size:16px">★</span>';
     addStep(1,true,rankTitle,rankInstr,document.querySelector(`.R3box2`),rankImg,'rank-img');
+    
+
+
 
     addContainer(2,'R4box',document.querySelector('.rewards4'));
     addText(2,'R4text',document.querySelector('.R4box1'));
     document.querySelector('.R4text1').textContent = 'Endless Extras';
     document.querySelector('.R4text2').textContent = 'Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.';
-    addStep(3,true,stepTitle2,stepInstr2,document.querySelector(`.R4box2`),stepImg,'stepIcon');
+    //testing spread
+    const crap = [3,true,stepTitle2,stepInstr2,document.querySelector(`.R4box2`),stepImg,'stepIcon']
+    addStep(...crap);
+    
     
 }

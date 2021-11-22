@@ -5,6 +5,7 @@
 
 html{
     font-family: 'MyFont';
+    scroll-behavior: smooth;
 }
 
 body{
@@ -104,21 +105,22 @@ button:nth-child(2){
 
 .container2 img, .container3 img {
     width: 50vw;
+    align-self: center;
 }
 
 .firstTextBlock1 {
-    width: 650px;
+    width: 70vw;
 }
 
 .text1, .fav-text1, .new-text1 {
     letter-spacing: 5px;
-    font-size: 4rem;
+    font-size: 5vw;
     margin: 0px;
     
 }
 
 .text2, .fav-text2, .new-text2 {
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1.6;
@@ -147,14 +149,34 @@ button:nth-child(2){
 .menu1 {
     color: gray;
     width: 10rem;
-    margin-left: 8.5rem;
+    height: 70vh;
+    margin-left: 7.5rem;
     margin-right: 5rem;
     line-height: 1.6;
+    cursor: pointer; 
+    position: fixed;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding:0px 1rem;
+
+    background: /* Shadow covers */
+    linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, /* Shadows */
+    radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+    background: /* Shadow covers */
+    linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, /* Shadows */
+    radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    /* Opera doesn't support this in the shorthand */
+    background-attachment: local, local, scroll, scroll;
 }
 
 .menu2 {
     flex: 1 1 0;
+    margin-left: 24rem;
     margin-right: 8.5rem;
+   
 }
 .menu2 div{
     display: flex;
@@ -356,6 +378,7 @@ button:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: ease 2s;
 }
 
 .R3box2 .textbox{
@@ -380,3 +403,7 @@ button:nth-child(2){
     font-weight: 600;
     font-size: 24px;
 }
+
+/* .R3box2 .hidden{
+    display: none;
+} */
