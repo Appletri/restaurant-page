@@ -38,3 +38,4 @@ With this small code, I was able to fill the menu page with the Starbucks menu i
 
 I also wanted to improve the interface for the menu page. On the [actual Starbucks Page](https://www.starbucks.com/menu), the user experience was improved to smaller windows by making the left navigation sticky and overflow scroll.
 
+All images used from the [Starbucks website](https://www.starbucks.com).
