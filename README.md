@@ -1,4 +1,3 @@
-This is a <a href="https://Appletri.github.io/restaurant-page/dist" rel="nofollow" target="_blank">restaurant page</a> for the Odin Project.
 # Restaurant Page
 ![](https://github.com/Appletri/Appletri/blob/main/assets/restaurant.gif)
 
@@ -36,3 +35,5 @@ function addIconLabel(parent, arrText, arrPic){
 ```
 It calls for the location of where to append the menu icons, the array of strings for the labels, and the array of links for the pictures.
 With this small code, I was able to fill the menu page with the starbucks menu items.
+
+
